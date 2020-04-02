@@ -7,11 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ASGovernment.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface Pensioners : NSObject
-
+@property(nonatomic,assign) float averagePrice;
 @end
 
 NS_ASSUME_NONNULL_END

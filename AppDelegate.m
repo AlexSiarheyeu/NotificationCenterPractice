@@ -9,6 +9,8 @@
 #import "AppDelegate.h"
 #import "ASGovernment.h"
 #import "Doctors.h"
+#import "Businessmen.h"
+#import "Pensioners.h"
 
 @interface AppDelegate()
 @property (nonatomic,strong) ASGovernment* government;
@@ -27,19 +29,23 @@
 
     
     Doctors *Alec = [[Doctors alloc]init];
-    //Alec.salary = self.government.salary;
     Alec.salary = self.government.salary;
-    //Alec.salary = self.government.averagePrice;
+    
+    Businessmen *Bob = [[Businessmen alloc]init];
+    Bob.taxLevel = self.government.taxLevel;
+    
+    Pensioners *Grin = [[Pensioners alloc]init];
+    Grin.averagePrice = self.government.averagePrice;
+    
+    
     self.government.salary = 900;
     self.government.salary = 1010;
+    
     self.government.averagePrice = 201;
+    self.government.averagePrice = 301;
     
-    
-    
-    
-    
-    
-    
+    self.government.taxLevel = 10;
+    self.government.taxLevel = 15;
     
     
     

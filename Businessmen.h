@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface Businessmen : NSObject
-
+@property(nonatomic,assign) float taxLevel;
 @end
 
 NS_ASSUME_NONNULL_END
