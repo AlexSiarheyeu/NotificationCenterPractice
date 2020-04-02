@@ -27,10 +27,12 @@
 
     
     Doctors *Alec = [[Doctors alloc]init];
+    //Alec.salary = self.government.salary;
     Alec.salary = self.government.salary;
-    
+    //Alec.salary = self.government.averagePrice;
     self.government.salary = 900;
-    self.government.salary = 1100;
+    self.government.salary = 1010;
+    self.government.averagePrice = 201;
     
     
     
@@ -44,7 +46,7 @@
     return YES;
 }
 -(void)governmentNotification:(NSNotification*)notification {
-    NSLog(@"%@", notification.userInfo);
+    //NSLog(@"%@", notification.userInfo);
 }
 -(void)dealloc{
     [[NSNotificationCenter defaultCenter] removeObserver:self];

@@ -23,7 +23,7 @@ NSString* const GovernmentTaxLevelUserInfoKey = @"GovernmentTaxLevelUserInfoKey"
     if (self) {
         _salary = 1000;
         _averagePrice = 300;
-        _taxLevel = (_salary*20)/100;
+        _taxLevel = 20;
     }
     return self;
 }
