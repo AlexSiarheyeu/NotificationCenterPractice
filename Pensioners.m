@@ -14,7 +14,10 @@
     self = [super init];
     if (self) {
         NSNotificationCenter *averagePriceNotification = [NSNotificationCenter defaultCenter];
-        [averagePriceNotification addObserver:self selector:@selector(averagePriceChanged:) name:GovernmentAveragePriceNotifiction object:nil];
+        [averagePriceNotification addObserver:self
+                                     selector:@selector(averagePriceChanged:)
+                                     name:GovernmentAveragePriceNotifiction
+                                     object:nil];
     }
     return self;
 }

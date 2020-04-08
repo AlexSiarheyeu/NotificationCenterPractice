@@ -15,7 +15,10 @@
     if (self) {
        
         NSNotificationCenter *salaryChangeNotification = [NSNotificationCenter defaultCenter];
-        [salaryChangeNotification addObserver:self selector:@selector(salaryChanged:) name:GovernmentSalaryNotifiction object:nil];
+        [salaryChangeNotification addObserver:self
+                                     selector:@selector(salaryChanged:)
+                                     name:GovernmentSalaryNotifiction
+                                     object:nil];
         
     }
     return self;
@@ -38,6 +41,9 @@
     }
     self.salary = salary;
 }
+
+
+
 
 
 

@@ -23,7 +23,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(governmentNotification:) name:GovernmentSalaryNotifiction object:nil];
+   
     
     self.government = [[ASGovernment alloc]init];
 
@@ -45,14 +45,13 @@
     self.government.averagePrice = 301;
     
     self.government.taxLevel = 10;
-    self.government.taxLevel = 15;
+    self.government.taxLevel = 20;
     
+  
     
     
     return YES;
-}
--(void)governmentNotification:(NSNotification*)notification {
-    //NSLog(@"%@", notification.userInfo);
+
 }
 -(void)dealloc{
     [[NSNotificationCenter defaultCenter] removeObserver:self];

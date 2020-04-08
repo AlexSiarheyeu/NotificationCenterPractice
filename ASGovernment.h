@@ -14,6 +14,9 @@ extern NSString* const GovernmentSalaryNotifiction;
 extern NSString* const GovernmentAveragePriceNotifiction;
 extern NSString* const GovernmentTaxLevelNotifiction;
 
+extern NSString* const UIApplicationWillResignActiveNotification;
+extern NSString* const UIApplicationDidBecomeActiveNotification;
+
 extern NSString* const GovernmentSalaryUserInfoKey;
 extern NSString* const GovernmentAveragePriceUserInfoKey;
 extern NSString* const GovernmentTaxLevelUserInfoKey;
@@ -23,6 +26,8 @@ extern NSString* const GovernmentTaxLevelUserInfoKey;
 @property(nonatomic, assign) float salary;
 @property(nonatomic, assign) float averagePrice;
 @property(nonatomic, assign) float taxLevel;
+
+
 
 @end
 

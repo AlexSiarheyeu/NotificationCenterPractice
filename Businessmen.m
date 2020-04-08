@@ -16,7 +16,10 @@
     if (self) {
         
         NSNotificationCenter *taxLevelChanged = [NSNotificationCenter defaultCenter];
-        [taxLevelChanged addObserver:self selector:@selector(taxLevelChanged:) name: GovernmentTaxLevelNotifiction object:nil];
+        [taxLevelChanged addObserver:self
+                            selector:@selector(taxLevelChanged:)
+                            name: GovernmentTaxLevelNotifiction
+                            object:nil];
     }
     return self;
 }
